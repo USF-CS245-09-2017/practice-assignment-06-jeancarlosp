@@ -49,7 +49,9 @@ public class BinaryHeap {
 		data = new_arr;
 	}
 
-	public int remove(){
+	public int remove() throws IOException{
+		if(size == 0)
+	        throw new IOException("IOException Occurred");
 		int priority = data[0];
 		swap(0,--size);
 		if(size != 0)
