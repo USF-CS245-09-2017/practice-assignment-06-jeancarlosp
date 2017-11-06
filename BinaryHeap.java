@@ -24,7 +24,7 @@ public class BinaryHeap {
 
 	}
 	
-	public void swap(int position1, int position2){
+	private void swap(int position1, int position2){
 		int current = size;
 		current = data[position1];
 		data[position1] = data[position2];
